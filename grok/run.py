@@ -63,7 +63,7 @@ def main(prompt):
     inference_runner.initialize()
     gen = inference_runner.run()
 
-    output = sample_from_model(gen, prompt, max_len=100, temperature=0.01)
+    output = sample_from_model(gen, prompt, max_len=512, temperature=0.1)
     print(f"Output for prompt: {prompt}",
           output)
     return output
