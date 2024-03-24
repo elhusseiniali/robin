@@ -1,9 +1,8 @@
 import gradio as gr
-from grok.run import main
-
+from bloom import run
 
 
 demo = gr.Interface(
-    fn=main, inputs="textbox", outputs="textbox")
+    fn=run, inputs="textbox", outputs="textbox")
     
 demo.launch(share=True)
